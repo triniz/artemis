@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static#index'
-  post '/thank_you' , to: 'static#thankyou'
-  get '/thank_you' , to: 'static#thankyou'
+  post 'static/thankyou' 
 end
