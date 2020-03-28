@@ -4,10 +4,10 @@
             <%= form.text_field :name, required: true,  placeholder: "Nom" %>
         </div>
         <div class="col-12 col-sm-6">
-            <%= form.text_field :email, required: true,  placeholder: "Email" %>
+            <%= form.email_field :email, required: true,  placeholder: "Email" %>
         </div>
     </div>
-    <%= form.text_area :message, required: true, placeholder: "Message"%>
+    <%= form.text_area :message, required: true, placeholder: "Message", rows: "5"%>
     <%= form.submit "Envoyer", class: "button button-lg button-border-1px button-outline-dark-2" %>
 <% end %>
 <div class="submit-result" id="flash-message">

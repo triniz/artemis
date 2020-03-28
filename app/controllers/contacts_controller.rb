@@ -10,8 +10,7 @@ class ContactsController < ApplicationController
         @contact = Contact.new
         flash.now[:success] = "Message envoyé!"
       else
-        flash.now[:error] = "On n'a pas pu envoyer votre message !"
-        render :new
+        flash.now[:notice] = "On n'a pas pu envoyer votre message !"
       end
     end
 end
