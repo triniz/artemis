@@ -1,0 +1,28 @@
+#about p {
+    margin: 0 25px;
+}
+
+.portfolio-item .portfolio-box .portfolio-img {
+text-align: center;
+}
+
+div#partners {
+    padding: 110px;
+}
+
+.vendors a {
+  border-right: solid 1px gray;
+  padding: 0px 5px;
+  color: crimson;
+}
+.vendors a.last {
+  border: none;
+}
+
+.modal-footer {
+    justify-content: flex-start;
+}
+
+.modal {
+  text-align: justify;
+}
