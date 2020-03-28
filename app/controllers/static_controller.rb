@@ -6,9 +6,9 @@ class StaticController < ApplicationController
         @email = params[:email]
         @subject = params[:subject]
         @message = params[:message]
-        ActionMailer::Base.mail(from: @email,
-        to: 'triki.nizar@gmail.com',
-        subject: "Artemispharma.net: un nouveau message de #{@name}",
-        body: "#{@subject}<br>#{@message}").deliver_now
+        ActionMailer::Base.mail(from: 'contact@artemispharma.net',
+                                to: 'triki.nizar@gmail.com',
+                                subject: "un nouveau message de #{@name}",
+                                body: "#{@subsject}<br>#{@message}").deliver_now
     end
 end
