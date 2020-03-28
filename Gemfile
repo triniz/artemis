@@ -72,3 +72,4 @@ gem 'mapbox-gl-rails'
 gem "font-awesome-rails"
 gem 'themify-icons-rails' , github: 'scratch-soft/themify-icons-rails'
 gem 'mail_form'
+gem 'meta-tags'
