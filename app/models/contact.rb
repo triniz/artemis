@@ -7,7 +7,7 @@ class Contact < MailForm::Base
     def headers
     {
       :subject => "Artemispharma.net : Formulaire de contact",
-      :to => "triki.nizar@gmail.com",
+      :to => "firasmede@yahoo.fr",
       :from => %("#{name}" <#{email}>)
     }
    end
