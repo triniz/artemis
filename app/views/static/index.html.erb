@@ -270,24 +270,20 @@
           </div>
         </div>
         <div class="col-12 col-md-8 text-md-right">
-          <form method="post" id="contactformm" action="sendgrid/contact-form.php">
-            <div class="form-row">
-              <div class="col-12 col-sm-6">
-                <input type="text" id="name" name="name" placeholder="Nom" required>
-              </div>
-              <div class="col-12 col-sm-6">
-                <input type="email" id="email" name="email" placeholder="Email" required>
-              </div>
-            </div>
-            <input type="text" id="subject" name="subject" placeholder="Sujet" required>
-            <textarea name="message" id="message" placeholder="Message"></textarea>
-            <button class="button button-lg button-border-1px button-outline-dark-2" type="submit" name="submit">Envoyer</button>
-          </form>
-          <!-- Submit result -->
-          <div class="submit-result">
-            <span id="success">Thank you! Your Message has been sent.</span>
-            <span id="error">Something went wrong, Please try again!</span>
-          </div>
+            <%= flash[:notice] %>
+            <%= form_with(url:"/thank_you", method: "post", local: true) do |form| %>
+                <div class="form-row">
+                    <div class="col-12 col-sm-6">
+                        <%= form.text_field :name,  placeholder: "Nom" %>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <%= form.text_field :email,  placeholder: "Email" %>
+                    </div>
+                </div>
+                <%= form.text_field :subject,  placeholder: "Sujet" %>
+                <%= form.text_area :message, placeholder: "Message"%>
+                <%= form.submit "Envoyer", class: "button button-lg button-border-1px button-outline-dark-2" %>
+            <% end %>
         </div>
       </div><!-- end row -->
     </div><!-- end container -->
