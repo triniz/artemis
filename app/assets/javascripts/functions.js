@@ -662,50 +662,6 @@ $(function() {
     });
 
   },{accX: 0, accY: -10});
-  //
-  // /*===============================================
-  //   Contact Form
-  // ===============================================*/
-  // $("#contactform").on("submit", function(e) {
-  //   alert("cac");
-  //   var name = $("#name").val();
-  //   var email = $("#email").val();
-  //   var subject = $("#subject").val();
-  //   var message = $("#message").val();
-  //
-  //   if (name === "") {
-  //     $("#name").addClass("error-color");
-  //   }
-  //   if (email === "") {
-  //     $("#email").addClass("error-color");
-  //   }
-  //   if (subject === "") {
-  //     $("#subject").addClass("error-color");
-  //   }
-  //   if (message === "") {
-  //     $("#message").addClass("error-color");
-  //   }
-  //
-  //   else {
-  //     $.ajax({
-  //       url:"../../sendgrid/contact-form.php",
-  //       data:$(this).serialize(),
-  //       type:"POST",
-  //       success:function(data){
-  //         $("#success").addClass("show-result"); //=== Show Success Message==
-  //         $("#contactform").each(function(){
-  //           this.reset();
-  //         });
-  //       },
-  //       error:function(data){
-  //         $("#error").addClass("show-result"); //===Show Error Message====
-  //       }
-  //     });
-  //     var forms = $("#contactform input, #contactform textarea");
-  //     forms.removeClass("error-color");
-  //   }
-  //
-  //   e.preventDefault();
-  // });
+
 
 });
