@@ -8,7 +8,7 @@ class Contact < MailForm::Base
     {
       :subject => "Artemispharma.net : Formulaire de contact",
       :to => "triki.nizar@gmail.com",
-      :from => %("#{name}" <#{email}>)
+      :from => "contact@artemispharma.net"
     }
    end
 end
